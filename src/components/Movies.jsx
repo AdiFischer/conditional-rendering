@@ -3,7 +3,7 @@ import { useState } from "react";
 const genres = ['animation', 'action', 'classic', 'comedy', 
 'drama', 'horror', 'family', 'mystery']
 function Movies() {
-    const [movieList, setMovieList] = useState() //var movielist 
+    const [movieList, setMovieList] = useState() //var movie list 
     const getMovies = (genre) => {
         fetch(`https://api.sampleapis.com/movies/${genre}`)
         .then(response => response.json())
